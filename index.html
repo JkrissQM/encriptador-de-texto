@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">   
+</head>
+<body>
+    <header class="encabezado">
+        <img class="encabezado_imagen" src="img/Logo.png" alt="Logo de Alura">        
+    </header> 
+    
+    <main class="contenido">
+
+        <section class="contenido_textoingresado">
+                
+            <h1 class="contenido_textoingresado_titulo">Encriptador De Texto</strong></h1>
+            <textarea id="textoIntroducido" class="contenido_textoingresado_textousuario" placeholder="Ingrese el texto aquí"></textarea>
+            <p class="contenido_textoingresado_aviso"><img src="img/signo-exclamacion.png" alt="signo de exclamacion"> Solo letras minúsculas y sin acentos</p>
+        
+            <div class="contenido_textoingresado_botones">
+                <!--botón encriptar -->
+                <button class="contenido_textoingresado_botones_encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <!--botón desencriptar -->
+                <button class="contenido_textoingresado_botones_desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="contenido_textoresultado">
+            
+            <section class="contenido_textoresultado_contenidoInicial">
+                <img class="contenido_textoresultado_contenidoInicial_imagen" src="img/Muñeco.png" alt="">
+                <p class="contenido_textoresultado_contenidoInicial_mensaje1">Ningún mensaje fue encontrado</p>
+                <p class="contenido_textoresultado_contenidoInicial_mensaje2">Ingrese el texto que desees encriptar o desencriptar</p>
+            </section>
+
+            <textarea id="textoResultado" class="contenido_textoresultado_resultado" readonly placeholder="" ></textarea>
+            <button id="botonCopiar" class="contenido_textoresultado_botondeCopiar" onclick="copiarTexto()">Copiar</button>
+        </section>    
+    </main>
+
+    <footer class="subtexto">
+        <p> 
+            <a href="https://github.com/JkrissQM/encriptador-de-texto/tree/main" class="subtexto_portafolio">
+                Desarrollado por Kriss Jheyson en el programa ONE de Alura Latam
+            </a> 
+        </p>
+    </footer>    
+</body>
+<script src="script.js"></script>
+
+</html>
